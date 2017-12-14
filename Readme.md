@@ -1,4 +1,4 @@
-[查看中文接入文档](https://github.com/AI-HELP/H5-access-stable/blob/master/README_CN.md)
+[Integration Guide In Chinese](https://github.com/AI-HELP/H5-access-stable/blob/master/README_CN.md)
 
 # AIhelp HTML5 Integration Guide
 ## 1. Import
