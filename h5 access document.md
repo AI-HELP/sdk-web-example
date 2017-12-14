@@ -5,7 +5,7 @@
 1.2 PC client: Import the js file on the page
 <pre>https://aihelp.net/elvactrl.js</pre>
 ## 2. Create
-Create initial parameters[object] in the local js file, 
+Create initial parameters[object] in the local js file, <br />
 incoming "gameid,gameuid,gameName,username,language,sdkVersion,hsTags" parameters.<br />
 > Example: <br />
    <pre>
