@@ -7,7 +7,7 @@
 	
 1.2 PC端网页： 在页面引入js文件
 
-	https://aihelp.net/elvactrl.js
+	https://aihelp.net/static/js/elvactrl.js
 	
 ## 2. 创建初始化参数
 在本地js文件中创建初始参数[object] 需要传入gameid,gameuid,gameName,username,language,sdkVersion,hsTags等参数。
