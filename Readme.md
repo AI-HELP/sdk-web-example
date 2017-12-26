@@ -9,7 +9,7 @@
 	
 1.2 On PC Web Page： import below js file
 
-	https://aihelp.net/elvactrl.js
+	https://aihelp.net/static/js/elvactrl.js
 	
 ## 2. Create Initial Parameters.
 
