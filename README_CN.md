@@ -7,7 +7,7 @@
 	
 1.2 PC端网页： 在页面引入js文件
 
-	https://aihelp.net/elvactrl.js
+	https://aihelp.net/static/js/elvactrl.js
 	
 ## 2. 创建初始化参数
 在本地js文件中创建初始参数[object] 需要传入gameid,gameuid,gameName,username,language,sdkVersion,hsTags等参数。
@@ -24,7 +24,7 @@
 		hsTags: '${hsTags}'
 	}  
     
-注：appid: 请使用注册邮箱登录 [AIhelp 后台](https://aihelp.net/elva)。在Settings菜单Applications页面查看。初次使用，请先登录[AIhelp 官网](http://aihelp.net/index.html)自助注册。<br />
+注：appid: 请使用注册邮箱登录 [AIhelp 后台](https://console.aihelp.net/elva)。在Settings菜单Applications页面查看。初次使用，请先登录[AIhelp 官网](http://aihelp.net/index.html)自助注册。<br />
 
 ## 3.	调用elvah5.init()传入初始化参数
 >示例:

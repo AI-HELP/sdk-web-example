@@ -9,7 +9,7 @@
 	
 1.2 On PC Web Page： import below js file
 
-	https://aihelp.net/elvactrl.js
+	https://aihelp.net/static/js/elvactrl.js
 	
 ## 2. Create Initial Parameters.
 
@@ -31,7 +31,7 @@ Pass in below parameters:
 	}  
     
 
-Note: Please log in [AIHelp Web Console](https://aihelp.net/elva) with your registration email account to find __appId__ of Web In the _Application_ page of the _Settings_ Menu. 
+Note: Please log in [AIHelp Web Console](https://console.aihelp.net/elva) with your registration email account to find __appId__ of Web In the _Application_ page of the _Settings_ Menu. 
 If your company doesn't have an account, you need to register an account in [AIHelp Website](http://aihelp.net/index.html). 
 
 ## 3.	call method elvah5.init() with "elva_conf"
