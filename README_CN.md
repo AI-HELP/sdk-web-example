@@ -117,4 +117,4 @@ autoEntrance: 是否智能隐藏'人工客服'入口.选传项.是请传'1',将�
 
 图示：
 
-![h5](https://github.com/AI-HELP/Docs-Screenshots/blob/master/h5.png "h5")
+![h5](https://github.com/AIHELP-NET/Pictures/blob/master/AIHelp-H5.jpg "h5")
