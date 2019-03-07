@@ -26,13 +26,13 @@
     autoEntrance:`${autoEntrance}`
 	}  
 
-**说明:**
-appId: 不同平台的id,此处需使用web的appid. 必传项.
-appName: 应用名. 必传项.
-userUid: 用户id. 选传项,AIHelp会优先使用您所传的uid,若是uid为空,AIHelp会根据用户的设备与浏览器生成唯一id作为用户uid.
-userName: 用户名. 选传项,AIHelp会优先使用您所传的userName,AIHelp会将所有未传userName的用户命名为Unknown_User.
-language: 语言. 必传项,否则AIHelp会将当前用户语言默认为英语.
-hsTags: 标签. 选传项,会将所传标签在AIHelp客服后台客诉中显示.
+**说明:**<br />
+appId: 不同平台的id,此处需使用web的appid. 必传项.<br />
+appName: 应用名. 必传项.<br />
+userUid: 用户id. 选传项,AIHelp会优先使用您所传的uid,若是uid为空,AIHelp会根据用户的设备与浏览器生成唯一id作为用户uid.<br />
+userName: 用户名. 选传项,AIHelp会优先使用您所传的userName,AIHelp会将所有未传userName的用户命名为Unknown_User.<br />
+language: 语言. 必传项,否则AIHelp会将当前用户语言默认为英语.<br />
+hsTags: 标签. 选传项,会将所传标签在AIHelp客服后台客诉中显示.<br />
 autoEntrance: 是否智能隐藏'人工客服'入口.选传项.是请传'1',将会智能隐藏入口,只有在用户提交表单或客服发送信息到用户后等一些情景下才会显示;否请传空,将常显'人工客服'入口.
 
     
