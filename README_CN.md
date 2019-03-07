@@ -1,30 +1,42 @@
-# AIhelp H5 接入文档 
+# AIHelp H5 接入文档 
 ## 1. 引入 
 
-1.1 移动端： 在页面引入js文件
+1.1 移动端网页： 
+>在页面引入js文件
 
 	https://aihelp.net/elva/elvah5/elvactrl.js
 	
-1.2 PC端网页： 在页面引入js文件
+1.2 PC端网页： 
+>在页面引入js文件
 
 	https://aihelp.net/static/js/elvactrl.js
 	
 ## 2. 创建初始化参数
-在本地js文件中创建初始参数[object] 需要传入gameid,gameuid,gameName,username,language,sdkVersion,hsTags等参数。
+在本地js文件中创建初始参数[object] 需要传入gameid,gameuid,gameName,username,language,hsTags,autoEntrance等参数。
 
 >示例:
 
 	var elva_conf = {
-		appId: 'TryElva_platform_14970be5-d3bf-4f91-8c70-c2065cc65e9a',
-		appName: '${appName}',
-		userUid: '${userUid}',
-		userName: '${userName}',
-		language: '${language}',
-		sdkVersion: '${sdkVersion}',
-		hsTags: '${hsTags}'
+		appId: `${appId}`,
+		appName: `${appName}`,
+		userUid: `${userUid}`,
+		userName: `${userName}`,
+		language: `${language}`,
+		hsTags: `${hsTags}`,
+    autoEntrance:`${autoEntrance}`
 	}  
+
+**说明:**
+appId: 不同平台的id,此处需使用web的appid. 必传项.
+appName: 应用名. 必传项.
+userUid: 用户id. 选传项,AIHelp会优先使用您所传的uid,若是uid为空,AIHelp会根据用户的设备与浏览器生成唯一id作为用户uid.
+userName: 用户名. 选传项,AIHelp会优先使用您所传的userName,AIHelp会将所有未传userName的用户命名为Unknown_User.
+language: 语言. 必传项,否则AIHelp会将当前用户语言默认为英语.
+hsTags: 标签. 选传项,会将所传标签在AIHelp客服后台客诉中显示.
+autoEntrance: 是否智能隐藏'人工客服'入口.选传项.是请传'1',将会智能隐藏入口,只有在用户提交表单或客服发送信息到用户后等一些情景下才会显示;否请传空,将常显'人工客服'入口.
+
     
-注：appid: 请使用注册邮箱登录 [AIhelp 后台](https://console.aihelp.net/elva)。在Settings菜单Applications页面查看。初次使用，请先登录[AIhelp 官网](http://aihelp.net/index.html)自助注册。<br />
+**注： appId** 请使用注册邮箱登录 [AIHelp 后台](https://console.aihelp.net/elva)。在Settings菜单Applications页面查看。初次使用，请先登录[AIHelp 官网](http://aihelp.net/index.html)自助注册。<br />
 
 ## 3.	调用elvah5.init()传入初始化参数
 >示例:
