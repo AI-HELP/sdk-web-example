@@ -3,11 +3,13 @@
 # AIhelp HTML5 Integration Guide
 ## 1. Import
 
-1.1 On Mobile Web Page: import below js file
+1.1 On Mobile Web Page:
+>import below js file
 
 	https://aihelp.net/elva/elvah5/elvactrl.js
 	
-1.2 On PC Web Page： import below js file
+1.2 On PC Web Page： 
+>import below js file
 
 	https://aihelp.net/static/js/elvactrl.js
 	
@@ -16,22 +18,38 @@
 You need to create initial parameters [object] in your local js files. 
 
 Pass in below parameters: 
-"gameid,gameuid,gameName,username,language,sdkVersion,hsTags" etc. 
+"gameid,gameuid,gameName,username,language,hsTags,autoEntrance" etc. 
 
 >Coding Example:
 
 	var elva_conf = {
-		appId: 'TryElva_platform_14970be5-d3bf-4f91-8c70-c2065cc65e9a',
-		appName: '${appName}',
-		userUid: '${userUid}',
-		userName: '${userName}',
-		language: '${language}',
-		sdkVersion: '${sdkVersion}',
-		hsTags: '${hsTags}'
+		appId: `${appId}`,
+		appName: `${appName}`,
+		userUid: `${userUid}`,
+		userName: `${userName}`,
+		language: `${language}`,
+		hsTags: `${hsTags}`,
+		autoEntrance: `${autoEntrance}`
 	}  
     
+**interpretation:**<br />
 
-Note: Please log in [AIHelp Web Console](https://console.aihelp.net/elva) with your registration email account to find __appId__ of Web In the _Application_ page of the _Settings_ Menu. 
+appId: The id of different platforms, here you need to use the web appid. Required.<br />
+
+appName: Application name. Required.<br />
+
+userUid: User id. Optional,AIHelp will give priority to the userUid you wrote. If the userUid is empty, AIHelp will generate a unique identifier based on the user's device and browser as the user userUid.<br />
+
+userName: Optional,AIHelp will give priority to the userName you passed. AIHelp will name all users who have not passed userName as Unknown_User.<br />
+
+language: Required,Otherwise AIHelp will default the current user language to English.<br />
+
+hsTags: Tag. Optional,The tag will be displayed in the AIHelp customer service back-end complaint.<br />
+
+autoEntrance: Whether to intelligently hide the 'manual customer service' entrance.Optional.If you want to open, please write '1', it will hide the entrance intelligently. It will only be displayed after the user submits the form or the customer service sends the information to the user. Otherwise, please set it blank and it will always display the 'manual customer service' entrance.
+
+
+**Note:** Please log in [AIHelp Web Console](https://console.aihelp.net/elva) with your registration email account to find __appId__ of Web In the _Application_ page of the _Settings_ Menu. 
 If your company doesn't have an account, you need to register an account in [AIHelp Website](http://aihelp.net/index.html). 
 
 ## 3.	call method elvah5.init() with "elva_conf"
@@ -55,17 +73,6 @@ In your page's UI event handler, call elvah5.show to show elva box.
 ## 5. Customerize the style of your elva box.  
 > Coding Example
 
-	.show_AIhelp {   //button style 
-		position: fixed;
-		bottom: 1rem;
-		right: 1rem;
-		border-radius: 4px;
-		border: none;
-		padding: 10px 30px;
-		background: #f9c633;
-		color: #444;
-		outline: none;
-	}
 
 	.elvaBox {    //chat interface 
 		width: 375px;
@@ -116,4 +123,8 @@ In your page's UI event handler, call elvah5.show to show elva box.
 
 Example：
 
-![h5](https://github.com/AI-HELP/Docs-Screenshots/blob/master/h5.png "h5")
+![success](https://github.com/AIHELP-NET/Pictures/blob/master/AIHelp-H5-on-PC(1).jpg "h5")
+
+Example：
+
+![h5](https://github.com/AIHELP-NET/Pictures/blob/master/AIHelpH5.jpg "h5")

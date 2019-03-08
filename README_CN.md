@@ -27,6 +27,7 @@
 	}  
 
 **说明:**<br />
+
 appId: 不同平台的id,此处需使用web的appid. 必传项.<br />
 appName: 应用名. 必传项.<br />
 userUid: 用户id. 选传项,AIHelp会优先使用您所传的uid,若是uid为空,AIHelp会根据用户的设备与浏览器生成唯一id作为用户uid.<br />
@@ -55,18 +56,6 @@ autoEntrance: 是否智能隐藏'人工客服'入口.选传项.是请传'1',将�
 
 ## 5.	自定义弹出elva盒子的样式
 > 示例:
-
-	.show_AIhelp {   //按钮样式
-		position: fixed;
-		bottom: 1rem;
-		right: 1rem;
-		border-radius: 4px;
-		border: none;
-		padding: 10px 30px;
-		background: #f9c633;
-		color: #444;
-		outline: none;
-	}
 
 	.elvaBox {    //聊天界面
 		width: 375px;
