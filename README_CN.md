@@ -1,7 +1,7 @@
 # AIHelp H5 接入文档 
 ## 1. 引入 
 
-1.1 移动端网页： 
+1.1 移动端网页：
 >在页面引入js文件
 
 	https://aihelp.net/elva/elvah5/elvactrl.js
@@ -23,7 +23,7 @@
 		userName: `${userName}`,
 		language: `${language}`,
 		hsTags: `${hsTags}`,
-    autoEntrance:`${autoEntrance}`
+        autoEntrance:`${autoEntrance}`
 	}  
 
 **说明:**<br />
@@ -115,6 +115,10 @@ autoEntrance: 是否智能隐藏'人工客服'入口.选传项.是请传'1',将�
 		left: 6px;
 	}
 
+效果:
+
+![效果图](https://github.com/AIHELP-NET/Pictures/blob/master/AIHelp-H5-on-PC(1).jpg "h5")
+
 图示：
 
-![h5](https://github.com/AIHELP-NET/Pictures/blob/master/AIHelp-H5.jpg "h5")
+![h5](https://github.com/AIHELP-NET/Pictures/blob/master/AIHelp_H5.jpg "h5")
