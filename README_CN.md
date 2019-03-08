@@ -23,7 +23,7 @@
 		userName: `${userName}`,
 		language: `${language}`,
 		hsTags: `${hsTags}`,
-        autoEntrance:`${autoEntrance}`
+		autoEntrance: `${autoEntrance}`
 	}  
 
 **说明:**<br />
@@ -121,4 +121,4 @@ autoEntrance: 是否智能隐藏'人工客服'入口.选传项.是请传'1',将�
 
 图示：
 
-![h5](https://github.com/AIHELP-NET/Pictures/blob/master/AIHelp_H5.jpg "h5")
+![h5](https://github.com/AIHELP-NET/Pictures/blob/master/AIHelpH5.jpg "h5")
