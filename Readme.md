@@ -121,10 +121,14 @@ In your page's UI event handler, call elvah5.show to show elva box.
 		left: 6px;
 	}
 
-Example：
+Rendering on PC：
 
-![success](https://github.com/AIHELP-NET/Pictures/blob/master/AIHelp-H5-on-PC(1).jpg "h5")
+![Rendering on PC](https://github.com/AIHELP-NET/Pictures/blob/master/AIHelp-H5-on-PC(1).jpg "h5")
 
-Example：
+Rendering on mobile:        For more access methods on mobile side,[click me](https://github.com/AI-HELP/H5-access-stable/blob/master/more_reference_CN.md).
+
+![Rendering on mobile](https://github.com/AIHELP-NET/Pictures/blob/master/AIHelp-H5-on-mobile(1).jpg "h5")
+
+Code Example：
 
 ![h5](https://github.com/AIHELP-NET/Pictures/blob/master/AIHelpH5.jpg "h5")

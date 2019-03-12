@@ -104,10 +104,14 @@ autoEntrance: 是否智能隐藏'人工客服'入口.选传项.是请传'1',将�
 		left: 6px;
 	}
 
-效果:
+PC端效果:
 
-![效果图](https://github.com/AIHELP-NET/Pictures/blob/master/AIHelp-H5-on-PC(1).jpg "h5")
+![PC效果图](https://github.com/AIHELP-NET/Pictures/blob/master/AIHelp-H5-on-PC(1).jpg "h5")
 
-图示：
+移动端效果:       更多移动端接入方式,[请戳这里](https://github.com/AI-HELP/H5-access-stable/blob/master/more_reference_CN.md)
+
+![移动端效果图](https://github.com/AIHELP-NET/Pictures/blob/master/AIHelp-H5-on-mobile(1).jpg "h5")
+
+代码示例：
 
 ![h5](https://github.com/AIHELP-NET/Pictures/blob/master/AIHelpH5.jpg "h5")
