@@ -125,7 +125,7 @@ Rendering on PC：
 
 ![Rendering on PC](https://github.com/AIHELP-NET/Pictures/blob/master/AIHelp-H5-on-PC(1).jpg "h5")
 
-Rendering on mobile:        **For more access methods on mobile side,[click me]**(https://github.com/AI-HELP/H5-access-stable/blob/master/more_reference_EN.md).
+Rendering on mobile:        **For more access methods on mobile side,**[click me](https://github.com/AI-HELP/H5-access-stable/blob/master/more_reference_EN.md).
 
 ![Rendering on mobile](https://github.com/AIHELP-NET/Pictures/blob/master/AIHelp-H5-on-mobile(1).jpg "h5")
 
