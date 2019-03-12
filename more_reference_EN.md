@@ -1,4 +1,4 @@
-## 4.	No need to call elvah5.show()
+## 	No need to call elvah5.show()
 
 When accessing AIHelp on the mobile side, we prefer to use link jump access for better user experience.
 
