@@ -4,9 +4,11 @@
 
 **例:**
 
-  href=`https://aihelp.net/elva/elvah5/#/gameid/${appid}/gameuid/${uid}/gameName/${gameName}/username/${userName}/lan/${language}/hsTags/${tag}?autoEntrance=1`
+    href=`https://aihelp.net/elva/elvah5/#/gameid/${appid}/gameuid/${uid}/gameName/${gameName}/username/${userName}/lan/${language}/hsTags/${tag}?autoEntrance=1`
 
 
 效果图: 
 
-![移动端跳转效果图](https://github.com/AIHELP-NET/Pictures/blob/master/AIHelp-H5-on-mobile(2).jpg "h5")
+![移动端跳转效果图]
+<img src="https://github.com/AIHELP-NET/Pictures/blob/master/AIHelp-H5-on-mobile(2).jpg" width="100" hegiht="30" align=center />
+<!-- (https://github.com/AIHELP-NET/Pictures/blob/master/AIHelp-H5-on-mobile(2).jpg "h5") -->
