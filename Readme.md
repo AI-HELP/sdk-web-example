@@ -129,6 +129,6 @@ Rendering on mobile:        **For more access methods on mobile side,**[click me
 
 ![Rendering on mobile](https://github.com/AIHELP-NET/Pictures/blob/master/AIHelp-H5-on-mobile(1).jpg "h5")
 
-Code Example：
+Example：
 
 ![h5](https://github.com/AIHELP-NET/Pictures/blob/master/AIHelpH5.jpg "h5")
