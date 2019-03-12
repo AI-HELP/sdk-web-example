@@ -9,6 +9,5 @@
 
 效果图: 
 
-![移动端跳转效果图]
-<img src="https://github.com/AIHELP-NET/Pictures/blob/master/AIHelp-H5-on-mobile(2).jpg" width="100" hegiht="30" align=center />
+<img src="https://github.com/AIHELP-NET/Pictures/blob/master/AIHelp-H5-on-mobile(2).jpg" width="300"  div align=center />
 <!-- (https://github.com/AIHELP-NET/Pictures/blob/master/AIHelp-H5-on-mobile(2).jpg "h5") -->
