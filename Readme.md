@@ -4,7 +4,7 @@
 ## 1. Import
 
 1.1 For Mobile Web Page:
->c
+>import below js file to your mobile web page
 
 	https://aihelp.net/elva/elvah5/elvactrl.js
 	
