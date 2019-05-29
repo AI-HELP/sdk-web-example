@@ -1,6 +1,6 @@
 ## 	No need to call elvah5.show()
 
-When accessing AIHelp on the mobile side, we prefer to use link jump access for better user experience.
+When accessing AIHelp on the mobile side, we suggest using link jump access for better user experience.
 
 **Example:**
 

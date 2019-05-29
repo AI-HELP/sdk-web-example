@@ -3,21 +3,21 @@
 # AIhelp HTML5 Integration Guide
 ## 1. Import
 
-1.1 On Mobile Web Page:
->import below js file
+1.1 For Mobile Web Page:
+>c
 
 	https://aihelp.net/elva/elvah5/elvactrl.js
 	
-1.2 On PC Web Page： 
->import below js file
+1.2 For PC Web Page： 
+>import below js file to your PC web page
 
 	https://aihelp.net/static/js/elvactrl.js
 	
 ## 2. Create Initial Parameters.
 
-You need to create initial parameters [object] in your local js files. 
+You need to create inital parameters [boject] in your local js files by:
 
-Pass in below parameters: 
+Passing in below parameters: 
 "gameid,gameuid,gameName,username,language,hsTags,autoEntrance" etc. 
 
 >Coding Example:
@@ -32,27 +32,26 @@ Pass in below parameters:
 		autoEntrance: `${autoEntrance}`
 	}  
     
-**interpretation:**<br />
+**introduction:**<br />
 
-appId: The id of different platforms, here you need to use the web appid. Required.<br />
+appId: The id of different platforms, here you need to use the web appid. Required filed.<br />
 
-appName: Application name. Required.<br />
+appName: Application name. Required filed.<br />
 
-userUid: User id. Optional,AIHelp will give priority to the userUid you wrote. If the userUid is empty, AIHelp will generate a unique identifier based on the user's device and browser as the user userUid.<br />
+userUid: User id. Optional filed,AIHelp will give priority to the userUid you pass. If the userUid is empty, AIHelp will generate a unique useUid based on the user's device and browser as the user's userUid.<br />
 
-userName: Optional,AIHelp will give priority to the userName you passed. AIHelp will name all users who have not passed userName as Unknown_User.<br />
+userName: Optional filed,AIHelp will give priority to the userName you passed. AIHelp will name all users who's username was not passed as Unknown_User.<br />
 
-language: Required,Otherwise AIHelp will default the current user language to English.<br />
+language: Required filed,Otherwise AIHelp will take the current user language as English.<br />
 
-hsTags: Tag. Optional,The tag will be displayed in the AIHelp customer service back-end complaint.<br />
+hsTags: Tag. Optional filed,The tag will be displayed in "Conversation-Userdata" in AIHelp back-end<br />
 
-autoEntrance: Whether to intelligently hide the 'manual customer service' entrance.Optional.If you want to open, please write '1', it will hide the entrance intelligently. It will only be displayed after the user submits the form or the customer service sends the information to the user. Otherwise, please set it blank and it will always display the 'manual customer service' entrance.
+autoEntrance: It decides if the 'manual customer service' entrance is hidden or not. Optional filed. If you want it to be hidden, please write '1', the entrance will be hidden and will only be displayed after the user submits the form or the customer service sends a message to the user. If you don't want it to be hidden, please set it blank and it will always be displayed and players are able to see it and reach to customer service all the time.
 
 
-**Note:** Please log in [AIHelp Web Console](https://console.aihelp.net/elva) with your registration email account to find __appId__ of Web In the _Application_ page of the _Settings_ Menu. 
-If your company doesn't have an account, you need to register an account in [AIHelp Website](http://aihelp.net/index.html). 
+**Note:** Please log in AIHelp with your registered account to find appId of Web In the Application page of the Settings Menu. If your company doesn't have an account yet, please egister one on [AIHelp Website](http://aihelp.net/index.html). 
 
-## 3.	call method elvah5.init() with "elva_conf"
+## 3.	use elvah5.init() to pass initialized parameter
 
 >Coding Example:
 
@@ -60,7 +59,7 @@ If your company doesn't have an account, you need to register an account in [AIH
 		elvah5.init(elva_conf)     
 	} 
   
-## 4. call method elvah5.show() 
+## 4. use elvah5.show() function
 
 In your page's UI event handler, call elvah5.show to show elva box.
 
@@ -121,11 +120,11 @@ In your page's UI event handler, call elvah5.show to show elva box.
 		left: 6px;
 	}
 
-Rendering on PC：
+Performance on PC：
 
 ![Rendering on PC](https://github.com/AIHELP-NET/Pictures/blob/master/AIHelp-H5-on-PC(1).jpg "h5")
 
-Rendering on mobile:        **For more access methods on mobile side,**[click me](https://github.com/AI-HELP/H5-access-stable/blob/master/more_reference_EN.md).
+Performance on mobile:        **For more access methods on mobile ,**[click me](https://github.com/AI-HELP/H5-access-stable/blob/master/more_reference_EN.md).
 
 ![Rendering on mobile](https://github.com/AIHELP-NET/Pictures/blob/master/AIHelp-H5-on-mobile(1).jpg "h5")
 
