@@ -1,6 +1,6 @@
 ## 	No need to call elvah5.show()
 
-**Customer is obligated to use the AIHelp service in accordance with the normal access mode and invocation mode described in the AIHelp access documentation. If customer influences the billing of AIHelp through technical means, AIHelp has the right to terminate the service unilaterally and immediately notify the customer. The customer is responsible.**
+**Party A is obliged to use Party B's services according to the correct plug-in method and calling method described by Party B's documents. If Party A uses any technical method to influence Party B's billing, Party B will have the right to notify Party A while unilaterally terminating the service immediately and ask Party A to assume responsibility for infulencing the billing of Party B.**
 
 
 >import below js file to your mobile web page
