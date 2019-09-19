@@ -125,4 +125,4 @@ PC端效果:
 
 代码示例：
 
-![h5](https://github.com/AI-HELP/H5-access-stable/blob/master/AIHelp-H5-on-mobile(2).png"h5")
+![h5](https://github.com/AI-HELP/H5-access-stable/blob/master/AIHelp-H5-on-mobile(2).png "h5")
