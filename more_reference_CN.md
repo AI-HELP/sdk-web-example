@@ -12,7 +12,7 @@
 
 **例:**
 
-    href=`https://aihelp.net/elva/elvah5/#/gameid/${appid}/gameuid/${uid}/gameName/${gameName}/username/${userName}/lan/${language}/hsTags/${tag}?autoEntrance=1`
+    href=`https://aihelp.net/elva/elvah5/#/gameid/${appid}/gameuid/${uid}/gameName/${gameName}/username/${userName}/lan/${language}/hsTags/${tag}?custom=3&autoEntrance=1`
 
 
 效果图: 
