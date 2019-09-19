@@ -38,7 +38,8 @@ userUid: 用户id. 选传项,AIHelp会优先使用您所传的uid,若是uid为�
 userName: 用户名. 选传项,AIHelp会优先使用您所传的userName,AIHelp会将所有未传userName的用户命名为Unknown_User.<br />
 language: 语言. 必传项,否则AIHelp会将当前用户语言默认为英语.<br />
 hsTags: 标签. 选传项,会将所传标签在AIHelp客服后台客诉中显示.<br />
-custom: 体验定制化. 选传项,可传值为1,2,3,4,5.分别对应以下5种体验：
+custom: 体验定制化. 选传项,可传值为1,2,3,4,5.分别对应以下5种体验：<br />
+
 > **custom:"1"**:  默认进入FAQ列表页面，点击“联系客服”直接进入人工客服页面<br />
 > **custom:"2"**:  默认进入人工客服页面<br />
 > **custom:"3"**:  默认进入机器人客服页面<br />
