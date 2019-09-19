@@ -15,7 +15,7 @@
 	https://aihelp.net/static/js/elvactrl.js
 	
 ## 2. 创建初始化参数
-在本地js文件中创建初始参数[object] 需要传入gameid,gameuid,gameName,username,language,hsTags,autoEntrance等参数。
+在本地js文件中创建初始参数[object] 需要传入gameid,gameuid,gameName,username,language,hsTags,custom,autoEntrance等参数。
 
 >示例:
 
