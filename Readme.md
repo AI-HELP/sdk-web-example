@@ -31,6 +31,7 @@ Passing in below parameters:
 		userName: `${userName}`,
 		language: `${language}`,
 		hsTags: `${hsTags}`,
+		custom: `${custom}`,
 		autoEntrance: `${autoEntrance}`
 	}  
     
@@ -47,6 +48,15 @@ userName: Optional filed,AIHelp will give priority to the userName you passed. A
 language: Required filed,Otherwise AIHelp will take the current user language as English.<br />
 
 hsTags: Tag. Optional filed,The tag will be displayed in "Conversation-Userdata" in AIHelp back-end<br />
+
+custom: Optional parameter that could experience customization.  The value can be 1,2,3,4,5. Corresponding to following 5 experiences: <br />
+
+> **custom:"1"**: Users would enter FAQ list by default, click "Contact Us" to enter manual service directly.<br />
+> **custom:"2"**: Users would enter Manual service by default.<br />
+> **custom:"3"**: Users would enter Robot interface by default.<br />
+> **custom:"4"**: Users would enter Robot interface by default and no display of "Contact Us" on upper right.<br />
+> **custom:"5"**: Users would enter FAQ list by default and no display of "Contact Us" on upper right.<br />
+> **Don't use this parameter, users would enter FAQ list by default and click "Contact Us" to enter Robot interface.**
 
 autoEntrance: It decides if the 'manual customer service' entrance is hidden or not. Optional filed. If you want it to be hidden, please write '1', the entrance will be hidden and will only be displayed after the user submits the form or the customer service sends a message to the user. If you don't want it to be hidden, please set it blank and it will always be displayed and players are able to see it and reach to customer service all the time.
 
