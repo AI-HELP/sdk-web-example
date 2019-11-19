@@ -4,16 +4,10 @@
 **页面初始化（必须在页面初始化阶段调用）**<br />
 **甲方有义务按照乙方接入文档说明的正常接入方式和调用方式使用乙方服务，如甲方通过技术手段影响乙方计费，乙方有权在通知甲方的同时立即单方面终止服务，并要求甲方承担责任。**<br />
 
-1.1 移动端网页：
 >在页面引入js文件
 
-	https://aihelp.net/elva/elvah5/elvactrl.js
-	
-1.2 PC端网页： 
->在页面引入js文件
+	https://aihelp.net/aihelph5/js/aihelp.js
 
-	https://aihelp.net/static/js/elvactrl.js
-	
 ## 2. 创建初始化参数
 在本地js文件中创建初始参数[object] appId,gameuid,userUid,userName,language,hsTags,custom,autoEntrance等参数。
 
@@ -68,7 +62,33 @@ autoEntrance: 是否智能隐藏'人工客服'入口.选传项.是请传'1',将�
 		elvah5.show()  
 	}
 
-## 5.	自定义弹出elva盒子的样式
+## 5.	使用window.addEventListener 函数接收推送 (非必选)
+通过接收AIHelp的推送来给玩家推送消息
+> 示例:
+
+	window.addEventListener("message", function(MessageEvent){
+    var origin = event.origin || event.originalEvent.origin;
+    if (window.Notification&&origin==='https://aihelp.net') {
+      if(window.Notification && Notification.permission !== "denied") {
+        Notification.requestPermission(function(status) {
+          var n = new Notification(`您有一条新的消息`,{
+            icon: "https://cdn.aihelp.net/img/logo_small.png",
+            tag: "AIHelp.net",
+            renotify: true,
+            body: MessageEvent.data.msg?MessageEvent.data.msg:''
+          }); 
+          n.onclick = function(event) {
+            event.preventDefault(); 
+            window.focus()
+          }
+        });
+      }
+    }
+  }, false);
+
+使用上面的函数,当origin变量等于'https://aihelp.net'这个字段的时候,就是aihelp推送的消息.我们现在的推送规则是:当客服回复给玩家消息就会推送,具体什么时候给与玩家提示可以在接入的时候根据具体场景或需求自行设计
+
+## 6.	自定义弹出elva盒子的样式
 > 示例:
 
 	.elvaBox {    //聊天界面
@@ -82,26 +102,23 @@ autoEntrance: 是否智能隐藏'人工客服'入口.选传项.是请传'1',将�
 
 	.close {   //关闭按钮（PC端网页）
 		position: absolute;
-		right: -10px;
-		top: -16px;
+		right: 10px;
+		top: 10px;
 		width: 30px;
 		height: 30px;
+		color: #fff;
 		background: #f9c633;
 		border-radius: 25px;
 		cursor: pointer;
 	}
 	
-	.close:hover {
-		background: #bbb;
-		transition: all .3s ease;
-	}
 
 	.close:before {
 		position: absolute;
 		content: '';
 		width: 20px;
 		height: 2px;
-		background: #444;
+		background: #fff;
 		transform: rotate(45deg);
 		top: 14px;
 		left: 6px;
@@ -112,7 +129,7 @@ autoEntrance: 是否智能隐藏'人工客服'入口.选传项.是请传'1',将�
 		position: absolute;
 		width: 20px;
 		height: 2px;
-		background: #444;
+		background: #fff;
 		transform: rotate(-45deg);
 		top: 14px;
 		left: 6px;

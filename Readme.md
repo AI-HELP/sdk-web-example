@@ -5,15 +5,9 @@
 
 **Party A is obliged to use Party B's services according to the correct plug-in method and calling method described by Party B's documents. If Party A uses any technical method to influence Party B's billing, Party B will have the right to notify Party A while unilaterally terminating the service immediately and ask Party A to assume responsibility for infulencing the billing of Party B.**<br />
 
-1.1 For Mobile Web Page:
 >import below js file to your mobile web page
 
-	https://aihelp.net/elva/elvah5/elvactrl.js
-	
-1.2 For PC Web Page： 
->import below js file to your PC web page
-
-	https://aihelp.net/static/js/elvactrl.js
+	https://aihelp.net/aihelph5/js/aihelp.js
 	
 ## 2. Create Initial Parameters.
 
@@ -96,26 +90,23 @@ In your page's UI event handler, call elvah5.show to show elva box.
 
 	.close {   //close button（PC Web Page）
 		position: absolute;
-		right: -10px;
-		top: -16px;
+		right: 10px;
+		top: 10px;
 		width: 30px;
 		height: 30px;
+		color: #fff;
 		background: #f9c633;
 		border-radius: 25px;
 		cursor: pointer;
 	}
 	
-	.close:hover { 
-		background: #bbb;
-		transition: all .3s ease;
-	}
 
 	.close:before {
 		position: absolute;
 		content: '';
 		width: 20px;
 		height: 2px;
-		background: #444;
+		background: #fff;
 		transform: rotate(45deg);
 		top: 14px;
 		left: 6px;
@@ -126,7 +117,7 @@ In your page's UI event handler, call elvah5.show to show elva box.
 		position: absolute;
 		width: 20px;
 		height: 2px;
-		background: #444;
+		background: #fff;
 		transform: rotate(-45deg);
 		top: 14px;
 		left: 6px;
