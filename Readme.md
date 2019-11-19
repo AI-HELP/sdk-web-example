@@ -102,7 +102,7 @@ Push messages to users by receiving AIHelp pushes
     }, false);
   
 
-Our current push rule is: when the agent reply users, the message will be pushed. As for in what circumstances that push messages to users, please design according to your specific scenarios or needs.
+Our current push rule is: when the agent reply users, the message will be pushed to you. As for in what circumstances that push messages to users, please design according to your specific scenarios or needs.
 
 ## 6. Customerize the style of your elva box.  
 > Coding Example
