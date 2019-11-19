@@ -69,13 +69,42 @@ autoEntrance: It decides if the 'manual customer service' entrance is hidden or 
 
 In your page's UI event handler, call elvah5.show to show elva box.
 
-> Coding Example
+> Coding Example:
 
 	btn.onclick = function () { 
 		elvah5.show()  
 	}
 
-## 5. Customerize the style of your elva box.  
+## 5.	Receive push by using the window.addEventListener function (optional)
+
+Push messages to users by receiving AIHelp pushes
+
+> Coding Example:
+
+	window.addEventListener("message", function(MessageEvent){
+    var origin = event.origin || event.originalEvent.origin;
+    if (window.Notification&&origin==='https://aihelp.net') {
+      if(window.Notification && Notification.permission !== "denied") {
+        Notification.requestPermission(function(status) {
+          var n = new Notification(`You have a new message`,{
+            icon: "https://cdn.aihelp.net/img/logo_small.png",
+            tag: "AIHelp.net",
+            renotify: true,
+            body: MessageEvent.data.msg?MessageEvent.data.msg:''
+          }); 
+          n.onclick = function(event) {
+            event.preventDefault(); 
+            window.focus()
+          }
+        });
+      }
+    }
+    }, false);
+  
+
+Our current push rule is: when the agent reply users, the message will be pushed. As for in what circumstances that push messages to users, please design according to your specific scenarios or needs.
+
+## 6. Customerize the style of your elva box.  
 > Coding Example
 
 
