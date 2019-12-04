@@ -48,8 +48,8 @@ custom: Optional parameter that could experience customization.  The value can b
 > **custom:"1"**: Users would enter FAQ list by default, click "Contact Us" to enter manual service directly.<br />
 > **custom:"2"**: Users would enter Manual service by default.<br />
 > **custom:"3"**: Users would enter Robot interface by default.<br />
-> **custom:"4"**: Users would enter Robot interface by default and no display of "Contact Us" on upper right.<br />
-> **custom:"5"**: Users would enter FAQ list by default and no display of "Contact Us" on upper right.<br />
+> **custom:"4"**: Users would enter Robot interface by default and no display of "Contact Us" on lower left.<br />
+> **custom:"5"**: Users would enter FAQ list by default and no display of "Contact Us" on lower left.<br />
 > **Don't use this parameter, users would enter FAQ list by default and click "Contact Us" to enter Robot interface.**
 
 autoEntrance: It decides if the 'manual customer service' entrance is hidden or not. Optional filed. If you want it to be hidden, please write '1', the entrance will be hidden and will only be displayed after the user submits the form or the customer service sends a message to the user. If you don't want it to be hidden, please set it blank and it will always be displayed and players are able to see it and reach to customer service all the time.
