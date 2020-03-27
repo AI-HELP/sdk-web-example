@@ -5,14 +5,14 @@
 **甲方有义务按照乙方接入文档说明的正常接入方式和调用方式使用乙方服务，如甲方通过技术手段影响乙方计费，乙方有权在通知甲方的同时立即单方面终止服务，并要求甲方承担责任。**<br />
 
 >在页面初始化引入js文件
-  https://aihelp.net/elva/elvah5/elvactrl.js
+  https://aihelp.net/aihelph5/js/aihelp.js
 
 
 在移动端接入AIHelp时,为了更好的用户体验,我们更建议使用链接跳转的形式接入.
 
 **例:**
 
-    href=`https://aihelp.net/elva/elvah5/#/gameid/${appid}/gameuid/${uid}/gameName/${gameName}/username/${userName}/lan/${language}/hsTags/${tag}?custom=3&autoEntrance=1`
+    href=`https://aihelp.net/aihelph5/#/gameid/${appid}/gameuid/${uid}/gameName/${gameName}/username/${userName}/lan/${language}/hsTags/${tag}?custom=3&autoEntrance=1`
 
 
 效果图: 

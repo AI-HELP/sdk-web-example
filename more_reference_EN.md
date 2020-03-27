@@ -4,14 +4,14 @@
 
 
 >import below js file to your mobile web page
-	https://aihelp.net/elva/elvah5/elvactrl.js
+	https://aihelp.net/aihelph5/js/aihelp.js
 
 
 When accessing AIHelp on the mobile side, we suggest using link jump access for better user experience.
 
 **Example:**
 
-    href=`https://aihelp.net/elva/elvah5/#/gameid/${appid}/gameuid/${uid}/gameName/${gameName}/username/${userName}/lan/${language}/hsTags/${tag}?custom=3&autoEntrance=1`
+    href=`https://aihelp.net/aihelph5/#/gameid/${appid}/gameuid/${uid}/gameName/${gameName}/username/${userName}/lan/${language}/hsTags/${tag}?custom=3&autoEntrance=1`
 
 
 Rendering: 
