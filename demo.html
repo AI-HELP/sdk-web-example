@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>AIHelp</title>
+		<style>
+			body {
+				background: #9ed6ff;
+			}
+			.AIHelpSupportBox {
+				width: 350px;
+				height: 550px;
+				position: fixed;
+				right: 1rem;
+				bottom: 4rem;
+			}
+
+			.close {
+				position: absolute;
+				right: 8px;
+				top: 8px;
+				width: 30px;
+				height: 30px;
+				color: #fff;
+				/* background: #f9c633; */
+				border-radius: 25px;
+				cursor: pointer;
+			}
+
+			.close:before {
+				position: absolute;
+				content: '';
+				width: 20px;
+				height: 2px;
+				background: #fff;
+				transform: rotate(45deg);
+				top: 14px;
+				left: 6px;
+			}
+
+			.close:after {
+				content: '';
+				position: absolute;
+				width: 20px;
+				height: 2px;
+				background: #fff;
+				transform: rotate(-45deg);
+				top: 14px;
+				left: 6px;
+			}
+			.open-aihelp {
+				height: 40px;
+				width: 200px;
+				text-align: center;
+				line-height: 40px;
+				border-radius: 5px;
+				border: 1px solid #ccc;
+				cursor: pointer;
+				background: #fff;
+				margin: 60px auto;
+				transition: all 0.3s ease;
+			}
+			.open-aihelp:hover {
+				background: rgb(226, 237, 238);
+			}
+		</style>
+		<script src="https://aihelp.net/webchat/aihelp.js"></script>
+	</head>
+	<body>
+		<p class="open-aihelp" onclick="openAIHelp()">Open AIHelp</p>
+	</body>
+	<script>
+		(function () {
+			var userConfig = {
+				userId: '',
+				userName: '',
+				userTags: 'tag1,tag2,tag3',
+				customData: {
+					key1: 'value1',
+					key2: 'value2',
+				},
+			};
+			var supportConfig = {
+				conversationIntent: 1,
+				alwaysShowHumanSupportButtonInBotPage: true,
+				welcomeMessage: '',
+			};
+			var initConfig = {
+				appKey: 'THIS IS YOUR APP KEY',
+				domain: 'THIS IS YOUR APP DOMAIN',
+				appId: 'THIS IS YOUR APP ID',
+				appName: 'APP NAME',
+				language: 'THIS IS YOUR DEFAULT LANGUAGE(OPTIONAL)',
+				supportMode: '',
+				supportConfig: supportConfig,
+				userConfig: userConfig,
+			};
+			if (typeof AIHelpSupport !== undefined) {
+				AIHelpSupport.init(initConfig);
+			}
+		})();
+		function openAIHelp() {
+			AIHelpSupport.show();
+		}
+	</script>
+</html>
