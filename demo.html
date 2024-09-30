@@ -10,45 +10,52 @@
 				background: #9ed6ff;
 			}
 			.AIHelpSupportBox {
-				width: 350px;
-				height: 550px;
+				width: 375px;
+				height: 600px;
 				position: fixed;
-				right: 1rem;
-				bottom: 4rem;
+				right: 28px;
+				bottom: 28px;
+				z-index: 9999;
+				box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 32px;
+				-webkit-transition: all 0.5s ease-in;
+				-moz-transition: all 0.5s ease-in;
+				transition: all 0.5s ease-in;
+				border-radius: 8px;
 			}
 
-			.close {
+			.AIHelpSupportClose {
 				position: absolute;
 				right: 8px;
 				top: 8px;
-				width: 30px;
-				height: 30px;
+				width: 28px;
+				height: 28px;
 				color: #fff;
-				/* background: #f9c633; */
+				background: rgba(0, 0, 0, 0.1);
 				border-radius: 25px;
 				cursor: pointer;
+				opacity: 1;
 			}
 
-			.close:before {
+			.AIHelpSupportClose:before {
 				position: absolute;
-				content: '';
+				content: "";
 				width: 20px;
 				height: 2px;
 				background: #fff;
 				transform: rotate(45deg);
-				top: 14px;
-				left: 6px;
+				top: 13px;
+				left: 5px;
 			}
 
-			.close:after {
-				content: '';
+			.AIHelpSupportClose:after {
+				content: "";
 				position: absolute;
 				width: 20px;
 				height: 2px;
 				background: #fff;
 				transform: rotate(-45deg);
-				top: 14px;
-				left: 6px;
+				top: 13px;
+				left: 5px;
 			}
 			.open-aihelp {
 				height: 40px;
@@ -66,44 +73,43 @@
 				background: rgb(226, 237, 238);
 			}
 		</style>
-		<script src="https://aihelp.net/webchat/aihelp.js"></script>
+		<script src="https://cdn.aihelp.net/webchatv5/aihelp.js"></script>
 	</head>
 	<body>
 		<p class="open-aihelp" onclick="openAIHelp()">Open AIHelp</p>
 	</body>
 	<script>
 		(function () {
-			var userConfig = {
-				userId: '',
-				userName: '',
-				userTags: 'tag1,tag2,tag3',
-				customData: {
-					key1: 'value1',
-					key2: 'value2',
-				},
+			let initConfig = {
+				domain: "THIS IS YOUR APP DOMAIN",
+				appId: "THIS IS YOUR APP ID",
+				language: "THIS IS YOUR DEFAULT LANGUAGE(OPTIONAL)",
 			};
-			var supportConfig = {
-				conversationIntent: 1,
-				alwaysShowHumanSupportButtonInBotPage: true,
-				welcomeMessage: '',
+			let userConfig = {
+				userName: "AIHelper",
+				userTags: "recharge,suggestion",
+				customData: JSON.stringify({
+					key: "value",
+				}),
 			};
-			var initConfig = {
-				appKey: 'THIS IS YOUR APP KEY',
-				domain: 'THIS IS YOUR APP DOMAIN',
-				appId: 'THIS IS YOUR APP ID',
-				appName: 'THIS IS YOUR APP NAME',
-				language: 'THIS IS YOUR DEFAULT LANGUAGE(OPTIONAL)',
-				supportMode: 'THIS IS YOUR SUPPORT MODE',
-				supportConfig: supportConfig,
+			let loginConfig = {
+				userId: "THIS IS YOUR USER ID",
 				userConfig: userConfig,
+				isEnterpriseAuth: false,
 			};
-			if (typeof AIHelpSupport !== undefined) {
-				AIHelpSupport.init(initConfig);
-			}
+			AIHelpSupport.registerAsyncEventListener("initialization", function (jsonData) {
+        // When init job is done, you can get callback here
+        // `jsonData`: { "isSuccess": true, "message": "Success" }
+        AIHelpSupport.login(loginConfig);
+			});
+			AIHelpSupport.registerAsyncEventListener("messageArrival", function (jsonData) {
+				// `jsonData`: { "msgCount": 1 }
+			});
+			AIHelpSupport.initialize(initConfig);
 		})();
 
 		function openAIHelp() {
-			AIHelpSupport.show(); 
+			AIHelpSupport.show("THIS IS YOUR ENTRANCE ID");
 		}
 	</script>
 </html>
